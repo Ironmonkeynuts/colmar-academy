@@ -86,3 +86,40 @@ img .logo {
     display: none;
   }
 }
+
+
+/* Banner section */
+
+.banner {
+  width: 100%;
+  background: lightgray;
+  display: flex;
+  padding: 32px 24px;
+}
+
+.image {
+  max-width: 60%;
+  padding-right: 24px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  max-width: 40%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 32px 24px 32px 24px;
+  flex-direction: column;
+}
+
+.content h1 {
+  display: inline;
+}
+
+.button {
+  padding: 8px 0;
+}
