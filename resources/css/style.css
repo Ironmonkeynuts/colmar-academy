@@ -22,13 +22,18 @@ a:hover {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .text {
   font-size: 1.5rem;
   padding: 16px 0;
+}
+
+.main {
+  position: relative;
+  top: 64px;
 }
 /* Header and Navigation */
 
@@ -99,21 +104,18 @@ img .logo {
 
 .image {
   max-width: 60%;
-  padding-right: 24px;
+
 }
 
 .image img {
   width: 100%;
   height: auto;
+
 }
 
 .content {
-  max-width: 40%;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding: 32px 24px 32px 24px;
-  flex-direction: column;
+  margin: auto;
+  padding: 0 24px;
 }
 
 .content h1 {
@@ -121,5 +123,16 @@ img .logo {
 }
 
 .button {
-  padding: 8px 0;
+  background: black;
+  padding: 8px;
+
+}
+
+.button p {
+  text-align: center;
+  line-height: 32px;
+}
+
+.link {
+  color: white;
 }
