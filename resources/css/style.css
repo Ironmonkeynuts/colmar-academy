@@ -100,39 +100,72 @@ img .logo {
   background: lightgray;
   display: flex;
   padding: 32px 24px;
+  justify-content: center;
 }
 
-.image {
+.banner-image {
   max-width: 60%;
-
 }
 
-.image img {
+.banner-image img {
   width: 100%;
   height: auto;
-
 }
 
-.content {
+.banner-content {
   margin: auto;
   padding: 0 24px;
 }
 
-.content h1 {
+.banner-content h1 {
   display: inline;
 }
 
 .button {
   background: black;
   padding: 8px;
-
 }
 
 .button p {
   text-align: center;
   line-height: 32px;
+  color: white;
 }
 
 .link {
   color: white;
+}
+
+/* Info section */
+
+.info {
+  width: 100%;
+  background: white;
+  display: flex;
+  padding: 32px 24px;
+  justify-content: center;
+}
+.info-left {
+  max-width: 60%;
+}
+.info-left img {
+  width: 100%;
+}
+.info-right{
+  max-width: 40%;
+  padding: 0 24px;
+}
+.info-image {
+  max-width: 35%;
+  float: left;
+}
+.info-image img {
+  max-width: 100%;
+}
+.info-content {
+  margin: auto;
+  width: 65%;
+  display: block;
+  padding: 0 24px 32px 24px;
+  float: left;
 }
