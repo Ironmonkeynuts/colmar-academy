@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,12 +20,14 @@ a {
 
 a:hover {
   color: grey;
+  text-decoration: double;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 
 .text {
   font-size: 1.5rem;
@@ -35,6 +38,7 @@ h1 {
   position: relative;
   top: 64px;
 }
+
 /* Header and Navigation */
 
 header {
@@ -56,23 +60,19 @@ nav {
   width: 100%;
   display: flex;
 }
-
 .nav-left {
   justify-content: flex-start;
   align-items: center;
 }
-
 .nav-left p {
   align-content: center;
   text-transform: uppercase;
   color: black;
   font-size: 20px;
 }
-
 .nav-right {
   justify-content: flex-end;
 }
-
 header nav ul {
   display: flex;
 }
@@ -85,11 +85,10 @@ header nav li {
 img .logo {
   height: 32px;
 }
-
 @media only screen and (max-width: 480px) {
-  .nav-left p {
-    display: none;
-  }
+.nav-left p {
+  display: none;
+}
 }
 
 
@@ -136,7 +135,7 @@ img .logo {
   color: white;
 }
 
-/* Info section */
+/* Info section + Thesis section */
 
 .info {
   width: 100%;
@@ -145,27 +144,191 @@ img .logo {
   padding: 32px 24px;
   justify-content: center;
 }
+
+.info a, p {
+  display: flex;
+  padding: 8px 8px 0 0;
+}
+
 .info-left {
   max-width: 60%;
 }
 .info-left img {
   width: 100%;
+  height: auto;
 }
-.info-right{
+.info-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: column;
+  flex-flow: column;
   max-width: 40%;
   padding: 0 24px;
 }
+.orientation, .guest, .campus {
+  display: flex;
+  padding: 0 16px 16px 16px;
+}
 .info-image {
   max-width: 35%;
-  float: left;
+  height: auto;
+  padding: 0 0 16px 16px;
 }
 .info-image img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
-.info-content {
+.info-text {
+  display: inline-block;
   margin: auto;
-  width: 65%;
+  max-width: 65%;
+  flex-flow: row;
+  padding: 0 0 16px 16px;
+}
+
+/* Learning section */
+.learning {
+  max-width: 100%;
+  background:lightgrey;
+  padding: 32px 24px;
+  margin: 32px 16px;
+  justify-content: center;
+}
+.courses {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 36px;
+}
+.course {
+  color: grey;
+  background-color: white;
+  margin: 16px;
+  padding: 0;
+  max-width: 30%;
+}
+.course h3 {
+  color: black;
+  padding: 0 0 8px 0;
+}
+.course-text {
+  max-width: 100%;
+  padding: 12px 8px 12px 8px;
+  margin: 16px;
+}
+.course-image {
+  max-width: 100%;
+  padding: 0;
+}
+.course-image img {
+  width: 100%;
+  height: auto;
+}
+.learning h1 {
+  text-align: center;
+}
+
+/* Thesis section */
+.thesis-title {
+  max-width: 100%;
+  height: auto;
+  background:white;
+
+}
+.thesis {
+  width: 100%;
+  height: auto;
+  background: white;
+  display: flex;
+  padding: 32px 24px 24px 24px;
+  justify-content: center;
+}
+.thesis-title h1 {
+  text-align: center;
+}
+.thesis a, p {
+  display: flex;
+  padding: 8px 8px 0 0;
+}
+.thesis-left {
+  max-width: 60%;
+}
+.thesis-left video {
+  width: 100%;
+  height: auto;
+}
+.thesis-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: column;
+  flex-flow: column;
+  max-width: 40%;
+  padding: 0 24px;
+}
+.fisma, .newyork {
+  display: flex;
+  padding: 0 16px 16px 16px;
+
+}
+.thesis-image {
+  max-width: 35%;
+  height: auto;
+  padding: 0 0 16px 16px;
+}
+.thesis-image img {
+  width: 100%;
+  height: auto;
+}
+.thesis-text {
+  display: inline-block;
+  margin: auto;
+  max-width: 65%;
+  flex-flow: row;
+  padding: 0 0 16px 16px;
+}
+.thesis-video {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  /*overflow-clip-margin: content-box;*/
+  overflow: clip;
+}
+
+/*Footer*/
+footer {
+  margin-top: 32px;
+  color: black;
+  padding: 12px;
+  background: white;
+  border-top: 1px solid gray; 
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.footer-left {
   display: block;
-  padding: 0 24px 32px 24px;
-  float: left;
+  padding: 16px 0;
+}
+.footer-right {
+  padding: 16px 0;
+  display: flex;
+ 
+}
+
+footer a {
+  display: inline-block;
+  color: black;
+  margin: 16px 0 0 16px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: grey;
+  text-decoration: double;
+}
+
+footer p {
+
 }
